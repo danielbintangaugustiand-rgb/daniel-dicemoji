@@ -6,7 +6,7 @@ import AvatarImage from "../atoms/AvatarImage";
 import { getAvatarUrl } from "@/lib/dicebear";
 
 export default function AvatarGenerator() {
-  const [seed, setSeed] = useState("Daniel");
+  const [seed, setSeed] = useState("");
   const [format, setFormat] = useState<"svg" | "png">("svg");
 
   const handleDownload = async () => {
